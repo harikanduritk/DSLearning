@@ -9,7 +9,7 @@ s2t = SpeechToTextV1(authenticator=authenticator)
 s2t.set_service_url(url_s2t)
 print(s2t)
 
-filename='/home/kandurh@perceptive.cloud/DataScience/Akhil_DataScience.mp3'
+filename='/home/kandurh@perceptive.cloud/DataScience/Meenu_DataScience.mp3'
 with open(filename, mode="rb")  as wav:
     response = s2t.recognize(audio=wav, content_type='audio/mp3')
 var = response.result
