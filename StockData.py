@@ -15,3 +15,8 @@ df = amd.history(period="max")
 print(type(df))
 str= (df.head(1)['Volume'])
 print(str)
+
+
+tesla = yf.Ticker('TSLA')
+tesla_df = tesla.history(period="max")
+
